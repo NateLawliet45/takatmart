@@ -1,0 +1,8 @@
+    (function() {
+        const addons = ["add-to-cart-animation", "agree-to-terms", "trust-badge", "wishlist"];
+        document.dispatchEvent(new CustomEvent('theme:addons:loaded', {
+            detail: {
+                addons
+            }
+        }));
+    })();
